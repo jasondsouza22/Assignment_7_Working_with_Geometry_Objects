@@ -26,6 +26,5 @@ polygon_array.add(pnt_pune_obj)
 polygon_array.add(pnt_nashik_obj)
 
 polygon_geom =arcpy.Polygon(polygon_array, spatial_ref)
-
 arcpy.CopyFeatures_management(polygon_geom, output_fc_path)
 print("Process Completed")
